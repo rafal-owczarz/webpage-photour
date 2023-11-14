@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Rafał Owczarz">
+  <title>PhotoTours - Photour</title>
+  <!-- IonIcons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- GoogleFonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- JS -->
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body class="page">
+  <!-- nav -->
+  <nav class="nav">
+    <div class="nav__wrapper wrapper">
+      <a href="index.html" class="nav__logo"><img src="./assets/img/logo.svg" alt="Logo of Photour Website"
+          class="nav__logo-img"></a>
+      <div class="nav__btns">
+        <button class="nav__btns-night">
+          <ion-icon data-name="moon" class="nav__btn" name="moon"></ion-icon>
+          <ion-icon data-name="sunny" class="nav__btn" name="sunny"></ion-icon>
+        </button>
+        <div class="nav__btns-menu">
+          <button class="nav__burger">
+            <span class="nav__burger-bar"></span>
+            <span class="nav__burger-bar"></span>
+            <span class="nav__burger-bar"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <ul class="nav__list">
+      <li class="nav__list-element">
+        <a href="index.html" class="nav__link link">Home</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="tours.html" class="nav__link link">Phototours</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="about.html" class="nav__link link">About</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="testimonials.html" class="nav__link link">Testimonials</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="faq.html" class="nav__link link">FAQ</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="contact.html" class="nav__link link">Contact</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="#" class="nav__social link">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#" class="nav__social link">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="#" class="nav__social link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#" class="nav__social link">
+          <ion-icon name="logo-tiktok"></ion-icon>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- header -->
+  <header class="header">
+    <video src="./assets/video/header1.mp4" class="header__video active" autoplay muted loop></video>
+    <img class="header__mask" src="./assets/img/mask.jpg" alt="Mask Image">
+    <h1 class="header__title heading h1">Travel with us</h1>
+    <!-- <a href="tours.html" class="header__btn link btn">Upcoming Tours</a> -->
+  </header>
+  <!-- main -->
+  <main class="main">
+    <section class="section tours">
+      <div class="wrapper tours__wrapper">
+        <h2 class="h2 tours__title">Upcoming Tours</h2>
+        <article class="tours__box">
+          <div class="tours__image-box">
+            <img src="./assets/img/tours1.jpg" alt="Warsaw at night
+            ​" class="tours__img">
+          </div>
+          <div class="tours__text-box">
+            <h3 class="tours__name">Warsaw</h3>
+            <p class="tours__subname">The Beautiful Capital of Poland</p>
+            <div class="tours__info">
+              <div class="tours__date">
+                <p class="tours__note-title">Date</p>
+                <p class="tours__note">23 - 31.12.2023</p>
+              </div>
+              <div class="tours__status">
+                <p class="tours__note-title">Availability</p>
+                <p class="tours__note">Open</p>
+              </div>
+            </div>
+            <p class="tours__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi reprehenderit
+              totam quod reiciendis itaque qui expedita repudiandae labore molestias ipsam suscipit velit tempora harum
+              quaerat eaque, dicta id similique distinctio maiores. Quo voluptatem id unde saepe aliquam eius sed dicta.
+            </p>
+            <button class="tours__btn">Discover <ion-icon class="tours__arrow" name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__wrapper wrapper">
+      <div class="footer__address">
+        <a href="#" class="nav__logo footer__logo"><img src="./assets/img/logo-d.svg" alt="Logo of Photour Website"
+            class="nav__logo-img"></a>
+        <p class="footer__address-text">
+          Po Box 2339<br>
+          Wilmington DE, 48220<br><br>
+          401-555-1212
+        </p>
+      </div>
+      <nav class="footer__nav navigation">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-element">
+            <a href="index.html" class="footer__link link">Home</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html" class="footer__link link">Phototours</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="about.html" class="footer__link link">About</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="testimonials.html" class="footer__link link">Testimonials</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="faq.html" class="footer__link link">FAQ</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="contact.html" class="footer__link link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="footer__nav tours">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-element">
+            <a href="tours.html#italy" class="footer__tours-link link">Italy</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html#greece" class="footer__tours-link link">Greece</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html#iceland" class="footer__tours-link link">Iceland</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html#france" class="footer__tours-link link">France</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html#norway" class="footer__tours-link link">Norway</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html#poland" class="footer__tours-link link">Poland</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__socials">
+        <h3 class="socials__title">Follow Us</h3>
+        <div class="socials__box">
+          <a href="#" class="socials__link link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#" class="socials__link link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="#" class="socials__link link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="#" class="socials__link link">
+            <ion-icon name="logo-tiktok"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copy">
+      <div class="footer__copy-wrapper wrapper">
+        <p class="footer__copy-paragraph">All Rights
+          Reserved
+          Photour Photo Tours 2023 &copy;</p>
+        <p class="footer__copy-paragraph">Rafał Owczarz &reg;
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

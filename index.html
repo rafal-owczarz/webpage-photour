@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Rafał Owczarz">
+  <title>Photour - Photo Tours, Your Journey Starts Today</title>
+  <!-- IonIcons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- GoogleFonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- JS -->
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body class="page">
+  <nav class="nav">
+    <div class="nav__wrapper wrapper">
+      <a href="index.html" class="nav__logo"><img src="./assets/img/logo.svg" alt="Logo of Photour Website"
+          class="nav__logo-img"></a>
+      <div class="nav__btns">
+        <button class="nav__btns-night">
+          <ion-icon data-name="moon" class="nav__btn" name="moon"></ion-icon>
+          <ion-icon data-name="sunny" class="nav__btn" name="sunny"></ion-icon>
+        </button>
+        <div class="nav__btns-menu">
+          <button class="nav__burger">
+            <span class="nav__burger-bar"></span>
+            <span class="nav__burger-bar"></span>
+            <span class="nav__burger-bar"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <ul class="nav__list">
+      <li class="nav__list-element">
+        <a href="index.html" class="nav__link link">Home</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="tours.html" class="nav__link link">Phototours</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="about.html" class="nav__link link">About</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="testimonials.html" class="nav__link link">Testimonials</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="faq.html" class="nav__link link">FAQ</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="contact.html" class="nav__link link">Contact</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="#" class="nav__social link">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#" class="nav__social link">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="#" class="nav__social link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#" class="nav__social link">
+          <ion-icon name="logo-tiktok"></ion-icon>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <header class="header">
+    <video src="./assets/video/header1.mp4" class="header__video active" autoplay muted loop></video>
+    <img class="header__mask" src="./assets/img/mask.jpg" alt="Mask Image">
+    <h1 data-aos="fade-up" class="header__title heading h1">Travel with us</h1>
+    <a data-aos="fade-up" data-aos-delay="300" href="tours.html" class="header__btn link btn">Upcoming Tours</a>
+    <div class="header__slider">
+      <button data-aos="fade-up" data-aos-delay="600" class="header__slider-btn active"></button>
+      <button data-aos="fade-up" data-aos-delay="600" class="header__slider-btn"></button>
+      <button data-aos="fade-up" data-aos-delay="600" class="header__slider-btn"></button>
+      <button data-aos="fade-up" data-aos-delay="600" class="header__slider-btn"></button>
+      <button data-aos="fade-up" data-aos-delay="600" class="header__slider-btn"></button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section explore">
+      <div class="explore__wrapper wrapper">
+        <h2 data-aos="fade-up" class="explore__title section__title h2">Explore beautiful places and take the best
+          photos!</h2>
+        <p data-aos="zoom-in" class="explore__paragraph paragraph">
+          You will not be bored with our travel agency. The world is open to you, and beautiful landscapes are waiting
+          to be immortalized in the picture. Start traveling with us today!
+        </p>
+        <p data-aos="zoom-in" class="explore__paragraph paragraph">
+          With our experienced staff you will learn how to capture unforgettable views, and at the same time you will
+          visit unusual places. Along the way, you'll also get tons of lectures on photography, tailored to your skill
+          level.
+        </p>
+        <p data-aos="zoom-in" class="explore__paragraph paragraph paragraph--bold">
+          Click on the map and choose your
+          destination.
+        </p>
+        <div data-aos="zoom-in" id="map">
+        </div>
+      </div>
+    </section>
+    <section class="section culture">
+      <div class="wrapper culture__wrapper">
+        <h2 data-aos="fade-up" class="h2 culture__title section__title">Learn about the culture of other countries</h2>
+        <article data-aos="fade-right" data-aos-anchor-placement="center-bottom" class="culture__box">
+          <div class="culture__video-box">
+            <video src="./assets/video/culture1.mp4" class="culture__video" muted autoplay loop></video>
+          </div>
+          <div class="culture__text">
+            <h3 class="h3 culture__subtitle">Food & drinks</h3>
+            <p class="paragraph culture__paragraph">Discover unusual dishes and exotic drinks from many corners of the
+              world. Enjoy them! Capture them in a photo and post them on social media. Our instructors will show you
+              how to take unique photos that will enrich your Instagram.</p>
+            <a href="#" class="culture__btn link btn">Explore</a>
+          </div>
+        </article>
+        <article data-aos="fade-left" data-aos-anchor-placement="center-bottom" class="culture__box">
+          <div class="culture__text">
+            <h3 class="h3 culture__subtitle">Monuments</h3>
+            <p class="paragraph culture__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
+              delectus suscipit, recusandae, nisi cumque ipsam provident facere reiciendis illum animi quaerat, soluta
+              obcaecati quod tenetur dicta at? Ea repudiandae nisi molestiae amet blanditiis corrupti magnam minus,
+              voluptatum quam doloribus ut.</p>
+            <a href="#" class="culture__btn link btn">Explore</a>
+          </div>
+          <div class="culture__video-box">
+            <video src="./assets/video/culture2.mp4" class="culture__video" muted autoplay loop></video>
+          </div>
+        </article>
+        <article data-aos="fade-right" data-aos-anchor-placement="center-bottom" class="culture__box">
+          <div class="culture__video-box">
+            <video src="./assets/video/culture3.mp4" class="culture__video" muted autoplay loop></video>
+          </div>
+          <div class="culture__text">
+            <h3 class="h3 culture__subtitle">Religion</h3>
+            <p class="paragraph culture__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
+              delectus suscipit, recusandae, nisi cumque ipsam provident facere reiciendis illum animi quaerat, soluta
+              obcaecati quod tenetur dicta at? Ea repudiandae nisi molestiae amet blanditiis corrupti magnam minus,
+              voluptatum quam doloribus ut.</p>
+            <a href="#" class="culture__btn link btn">Explore</a>
+          </div>
+        </article>
+        <article data-aos="fade-left" data-aos-anchor-placement="center-bottom" class="culture__box">
+          <div class="culture__text">
+            <h3 class="h3 culture__subtitle">Language</h3>
+            <p class="paragraph culture__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
+              delectus suscipit, recusandae, nisi cumque ipsam provident facere reiciendis illum animi quaerat, soluta
+              obcaecati quod tenetur dicta at? Ea repudiandae nisi molestiae amet blanditiis corrupti magnam minus,
+              voluptatum quam doloribus ut.</p>
+            <a href="#" class="culture__btn link btn">Explore</a>
+          </div>
+          <div class="culture__video-box">
+            <video src="./assets/video/culture4.mp4" class="culture__video" muted autoplay loop></video>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section newsletter">
+      <div class="wrapper newsletter__wrapper">
+        <h2 data-aos="fade-up" class="newsletter__title h2">Didn't find the PhotoTour you were looking for?</h2>
+        <p data-aos="zoom-in" class="newsletter__description">Get updates about new tours, traver tips, photo guides and
+          more. Subscribe to
+          the Newsletter!</p>
+        <form data-aos="zoom-in" class="newsletter__form">
+          <input placeholder="Enter Your E-mail" type="email" class="newsletter__input">
+          <button class="newsletter__btn btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper wrapper">
+      <div class="footer__address">
+        <a href="#" class="nav__logo footer__logo"><img src="./assets/img/logo-d.svg" alt="Logo of Photour Website"
+            class="nav__logo-img"></a>
+        <p class="footer__address-text">
+          Po Box 2339<br>
+          Wilmington DE, 48220<br><br>
+          401-555-1212
+        </p>
+      </div>
+      <nav class="footer__nav navigation">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-element">
+            <a href="index.html" class="footer__link link">Home</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html" class="footer__link link">Phototours</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="about.html" class="footer__link link">About</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="testimonials.html" class="footer__link link">Testimonials</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="faq.html" class="footer__link link">FAQ</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="contact.html" class="footer__link link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="footer__nav tours">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-element">
+            <a href="tours.html#italy" class="footer__tours-link link">Italy</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html#greece" class="footer__tours-link link">Greece</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html#iceland" class="footer__tours-link link">Iceland</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html#france" class="footer__tours-link link">France</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html#norway" class="footer__tours-link link">Norway</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html#poland" class="footer__tours-link link">Poland</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__socials">
+        <h3 class="socials__title">Follow Us</h3>
+        <div class="socials__box">
+          <a href="#" class="socials__link link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#" class="socials__link link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="#" class="socials__link link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="#" class="socials__link link">
+            <ion-icon name="logo-tiktok"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copy">
+      <div class="footer__copy-wrapper wrapper">
+        <p data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="footer__copy-paragraph">All Rights
+          Reserved
+          Photour Photo Tours 2023 &copy;</p>
+        <p data-aos="fade-left" data-aos-anchor-placement="top-bottom" class="footer__copy-paragraph">Rafał Owczarz
+          &reg;
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG1uYl05q7wp5stnna4w3V27Mw5KjklRo&callback=initMap"></script>
+  <script src="./js/map.js" defer async></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

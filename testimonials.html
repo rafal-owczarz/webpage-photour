@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Rafał Owczarz">
+  <title>Testimonials - Photour</title>
+  <!-- IonIcons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- GoogleFonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- JS -->
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body class="page">
+  <!-- nav -->
+  <nav class="nav">
+    <div class="nav__wrapper wrapper">
+      <a href="index.html" class="nav__logo"><img src="./assets/img/logo.svg" alt="Logo of Photour Website"
+          class="nav__logo-img"></a>
+      <div class="nav__btns">
+        <button class="nav__btns-night">
+          <ion-icon data-name="moon" class="nav__btn" name="moon"></ion-icon>
+          <ion-icon data-name="sunny" class="nav__btn" name="sunny"></ion-icon>
+        </button>
+        <div class="nav__btns-menu">
+          <button class="nav__burger">
+            <span class="nav__burger-bar"></span>
+            <span class="nav__burger-bar"></span>
+            <span class="nav__burger-bar"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <ul class="nav__list">
+      <li class="nav__list-element">
+        <a href="index.html" class="nav__link link">Home</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="tours.html" class="nav__link link">Phototours</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="about.html" class="nav__link link">About</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="testimonials.html" class="nav__link link">Testimonials</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="faq.html" class="nav__link link">FAQ</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="contact.html" class="nav__link link">Contact</a>
+      </li>
+      <li class="nav__list-element">
+        <a href="#" class="nav__social link">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#" class="nav__social link">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="#" class="nav__social link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#" class="nav__social link">
+          <ion-icon name="logo-tiktok"></ion-icon>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- header -->
+  <header class="header">
+    <video src="./assets/video/header3.mp4" class="header__video active" autoplay muted loop></video>
+    <img class="header__mask" src="./assets/img/mask.jpg" alt="Mask Image">
+    <h1 class="header__title heading h1">Travel with us</h1>
+    <a href="tours.html" class="header__btn link btn">Upcoming Tours</a>
+  </header>
+  <!-- main -->
+  <main class="main">
+    <section class="section testimonials">
+      <div class="wrapper testimonials__wrapper">
+        <h2 class="h2 testimonials__title">Testimonials</h2>
+        <div class="testimonials__box">
+          <div class="testimonials__left">
+            <div class="testimonials__profile active" data-number="1">
+              <img src="./assets/img/testimonial1.jpg" alt="John Smith Photo" class="testimonials__img">
+              <div class="testimonials__info">
+                <h4 class="testimonials__name">John Smith</h4>
+                <p class="__testimonials__location">Warsaw, Poland</p>
+              </div>
+            </div>
+            <div class="testimonials__profile" data-number="2">
+              <img src="./assets/img/testimonial2.jpg" alt="Kim Brown Photo" class="testimonials__img">
+              <div class="testimonials__info">
+                <h4 class="testimonials__name">Kim Brown</h4>
+                <p class="__testimonials__location">Paris, France</p>
+              </div>
+            </div>
+            <div class="testimonials__profile" data-number="3">
+              <img src="./assets/img/testimonial3.jpg" alt="Fernando Garcia Photo" class="testimonials__img">
+              <div class="testimonials__info">
+                <h4 class="testimonials__name">Fernando Garcia</h4>
+                <p class="__testimonials__location">Madrid, Spain</p>
+              </div>
+            </div>
+            <div class="testimonials__profile" data-number="4">
+              <img src="./assets/img/testimonial4.jpg" alt="Mokebe Ugabuga Photo" class="testimonials__img">
+              <div class="testimonials__info">
+                <h4 class="testimonials__name">Mokebe Johnson </h4>
+                <p class="__testimonials__location">Pretoria, RPA</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__right">
+            <div data-order="1" class="testimonials__content active">
+              <h3 class="testimonials__subtitle">It was a great experience!</h3>
+              <div class="testimonials__stars">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="testimonials__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+                magnam
+                maxime nesciunt impedit minus explicabo deserunt dolores, accusantium error tempore numquam neque
+                tenetur
+                culpa modi voluptate necessitatibus. Pariatur ut voluptas iusto velit omnis quam magnam atque sunt, cum
+                sit officia aut autem consequatur. Sint nam aspernatur vero, veritatis voluptate dolorem.</p>
+            </div>
+            <div data-order="2" class="testimonials__content">
+              <h3 class="testimonials__subtitle">Photour can change your life</h3>
+              <div class="testimonials__stars">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+              <p class="testimonials__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
+                veritatis ab expedita cupiditate! Minus facilis ex ea quibusdam, repudiandae fuga necessitatibus
+                dignissimos corrupti ad sequi at veritatis quasi velit quae, quod, ratione labore dicta unde incidunt
+                expedita voluptatum. Provident explicabo dolorum optio impedit officia recusandae.</p>
+            </div>
+            <div data-order="3" class="testimonials__content">
+              <h3 class="testimonials__subtitle">Very nice but could be better</h3>
+              <div class="testimonials__stars">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+              <p class="testimonials__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis expedita
+                quidem distinctio vero nemo doloremque mollitia impedit doloribus praesentium nostrum, aliquid, soluta
+                quia possimus ex enim, odio quam at fuga explicabo fugit perspiciatis animi molestiae tempore commodi!
+                Minima doloribus illo eligendi perferendis illum alias tempore libero quibusdam repudiandae, natus
+                cumque non obcaecati quod et labore harum? Earum quasi sapiente consectetur.</p>
+            </div>
+            <div data-order="4" class="testimonials__content">
+              <h3 class="testimonials__subtitle">Best adventure in my whole life!</h3>
+              <div class="testimonials__stars">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="testimonials__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+                consequuntur odit. Deleniti facere sint doloremque tenetur molestias! Veniam, repudiandae sint libero
+                velit ab eius eveniet fugiat non laboriosam aspernatur itaque, nobis modi suscipit facere sequi
+                similique aut blanditiis sed repellat sit impedit deserunt veritatis quos! Nostrum quis provident
+                reprehenderit quisquam nobis excepturi inventore sequi commodi officiis libero, facilis nesciunt
+                aspernatur!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials__write">
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__wrapper wrapper">
+      <div class="footer__address">
+        <a href="#" class="nav__logo footer__logo"><img src="./assets/img/logo-d.svg" alt="Logo of Photour Website"
+            class="nav__logo-img"></a>
+        <p class="footer__address-text">
+          Po Box 2339<br>
+          Wilmington DE, 48220<br><br>
+          401-555-1212
+        </p>
+      </div>
+      <nav class="footer__nav navigation">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-element">
+            <a href="index.html" class="footer__link link">Home</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html" class="footer__link link">Phototours</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="about.html" class="footer__link link">About</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="testimonials.html" class="footer__link link">Testimonials</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="faq.html" class="footer__link link">FAQ</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="contact.html" class="footer__link link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="footer__nav tours">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-element">
+            <a href="tours.html#italy" class="footer__tours-link link">Italy</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html#greece" class="footer__tours-link link">Greece</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html#iceland" class="footer__tours-link link">Iceland</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html#france" class="footer__tours-link link">France</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html#norway" class="footer__tours-link link">Norway</a>
+          </li>
+          <li class="footer__nav-element">
+            <a href="tours.html#poland" class="footer__tours-link link">Poland</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__socials">
+        <h3 class="socials__title">Follow Us</h3>
+        <div class="socials__box">
+          <a href="#" class="socials__link link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#" class="socials__link link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="#" class="socials__link link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="#" class="socials__link link">
+            <ion-icon name="logo-tiktok"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copy">
+      <div class="footer__copy-wrapper wrapper">
+        <p class="footer__copy-paragraph">All Rights
+          Reserved
+          Photour Photo Tours 2023 &copy;</p>
+        <p class="footer__copy-paragraph">Rafał Owczarz &reg;
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

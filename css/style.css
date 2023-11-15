@@ -24,8 +24,6 @@
 .page {
   background-color: var(--bg-color);
   width: 100%;
-  -webkit-hyphens: auto;
-          hyphens: auto;
 }
 
 .dark {
@@ -818,8 +816,6 @@
   margin-bottom: 2rem;
   font-size: 1.15rem;
   text-align: justify;
-  -webkit-hyphens: none;
-          hyphens: none;
 }
 
 .tours {
@@ -887,8 +883,6 @@
   line-height: 170%;
   font-size: 0.95rem;
   text-align: justify;
-  -webkit-hyphens: none;
-          hyphens: none;
 }
 .tours__btn {
   display: flex;

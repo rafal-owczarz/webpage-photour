@@ -26,7 +26,6 @@
 .page {
   background-color: var(--bg-color);
   width: 100%;
-  hyphens: auto;
 }
 
 .dark {
@@ -966,7 +965,6 @@
     margin-bottom: 2rem;
     font-size: 1.15rem;
     text-align: justify;
-    hyphens: none;
   }
 
 }
@@ -1047,7 +1045,6 @@
     line-height: 170%;
     font-size: .95rem;
     text-align: justify;
-    hyphens: none;
   }
 
   &__btn {

@@ -16,7 +16,7 @@ function initMap() {
     });
 
     const infoWindow = new google.maps.InfoWindow({
-      content: `<h1>${info}</h1><br><a href='#'>Book</a>`
+      content: `<h1>${info}</h1><br><a href='./tours.html#${info.toLowerCase()}'>Book</a>`
     });
 
     marker.addListener('click', () => {
@@ -71,7 +71,7 @@ function initMap() {
   addMarker({
     lat: 41.90278,
     lng: 12.49636
-  }, 'Roma');
+  }, 'Rome');
   addMarker({
     lat: 48.85661,
     lng: 2.35222

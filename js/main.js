@@ -8,6 +8,8 @@ const video = document.querySelector('.header__video');
 const faqs = document.querySelectorAll('.faq__box');
 const profiles = document.querySelectorAll('.testimonials__profile');
 const testimonials = document.querySelectorAll('.testimonials__content');
+
+const preloader = document.querySelector('.preloader');
 let nightCheck;
 
 
@@ -63,7 +65,6 @@ faqs.forEach(faq => {
   });
 });
 
-
 profiles.forEach(profile => {
   profile.addEventListener('click', () => {
     for (let i = 0; i < profiles.length; i++) {
@@ -76,4 +77,8 @@ profiles.forEach(profile => {
     });
     document.querySelector(`[data-order="${order}"]`).style.display = 'flex';
   });
+});
+
+window.addEventListener('load', () => {
+  preloader.style.display = 'none';
 });
